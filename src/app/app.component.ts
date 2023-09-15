@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 //metadata
 @Component({//decorator
   selector: 'app-root',//component directive

@@ -1,3 +1,6 @@
+<button class="btn btn-primary float-end" (click)="changeLanguage()">
+  {{ language }}
+</button>
 <div class="movie-ticket">
   <div class="container-fluid">
     <!-- Item -->
@@ -13,7 +16,11 @@
         <!-- Transparent Background -->
         <div class="ui-trans clearfix">
           <!-- Image -->
-          <img [src]="imagePath + selectedmovie.poster_path" alt="" class="img-responsive" />
+          <img
+            [src]="imagePath + selectedmovie.poster_path"
+            alt=""
+            class="img-responsive"
+          />
           <!-- Details -->
           <div class="ui-details clearfix">
             <!-- Movie Name -->

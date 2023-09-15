@@ -12,7 +12,9 @@ import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { TvDetailsComponent } from './tv-details/tv-details.component';
-
+import{HttpClientModule} from '@angular/common/http'
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,11 @@ import { TvDetailsComponent } from './tv-details/tv-details.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    MatPaginatorModule,
+    BrowserAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

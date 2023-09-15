@@ -1,5 +1,17 @@
+<button class="btn btn-primary float-end" (click)="changeLanguage()">
+  {{ language }}
+</button>
+
 <div class="row w-75 mx-auto mt-5">
+  <mat-paginator
+    [length]="totalTvs"
+    [pageSize]="tvPerPage"
+    aria-label="Select page"
+    (page)="changePage($event)"
+  >
+  </mat-paginator>
   <input type="text" class="form-control" [(ngModel)]="searchValue" />
+
   <!-- <h2>{{searchval}}</h2> -->
 </div>
 
